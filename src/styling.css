@@ -1,6 +1,22 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #edf7fa;
   font-family: "Roboto", sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  font-size: 14px;
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+a {
+  color: #5e87b8;
 }
 .weather-app-main {
   background-color: white;
@@ -9,4 +25,23 @@ body {
   max-width: 600px;
   margin: 35px auto;
   padding: 30px;
+}
+
+.search-form-input {
+  background-color: #e4f1fe;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 15px 20px;
+  width: 80%;
+}
+
+.search-form-button {
+  background-color: #5e87b8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin-left: 5px;
+  padding: 15px 25px;
 }
