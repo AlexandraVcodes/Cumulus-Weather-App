@@ -3,44 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cumulus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styling.css" />
+    <title>Cumulus App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city ..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
+    <div class="weather-app-main">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city ..." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
 
-    <main>
-      <div>
-        <h1>Salzburg</h1>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13 km/h
-        </p>
-      </div>
-      <div>⛅ 12°C</div>
-    </main>
+      <main>
+        <div>
+          <h1>Salzburg</h1>
+          <p>
+            Tuesday 14:49, scattered clouds
+            <br />
+            Humidity: 66%, Wind: 3.13 km/h
+          </p>
+        </div>
+        <div>⛅ 12°C</div>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/AlexandraVcodes/" target="_blank">
-        Alexandra Vukits</a
-      >
-      and is
-      <a
-        href="https://github.com/AlexandraVcodes/Cumulus-Weather-App"
-        target="_blank"
-      >
-        open-sourced on Github</a
-      >
-      and
-      <a href="https://cumulus-weather-app.netlify.app/" target="_blank">
-        hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/AlexandraVcodes/" target="_blank">
+          Alexandra Vukits</a
+        >
+        and is
+        <a
+          href="https://github.com/AlexandraVcodes/Cumulus-Weather-App"
+          target="_blank"
+        >
+          open-sourced on Github</a
+        >
+        and
+        <a href="https://cumulus-weather-app.netlify.app/" target="_blank">
+          hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
