@@ -43,6 +43,44 @@ main {
   line-height: 48px;
 }
 
+.weather-app-details {
+  font-size: 16px;
+  line-height: 20px;
+  color: #756c83;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.humidity {
+  color: #ff006c;
+  font-weight: 700;
+}
+
+.wind {
+  color: #ff006c;
+  font-weight: 700;
+}
+
+.weather-app-container {
+  display: flex;
+}
+
+.weather-app-temperature {
+  font-size: 88px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.weather-app-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.weather-app-unit {
+  font-size: 26px;
+  margin-top: 16px;
+}
+
 .search-form-input {
   background-color: #e4f1fe;
   border: none;
