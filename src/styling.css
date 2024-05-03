@@ -18,6 +18,11 @@ footer {
 a {
   color: #5e87b8;
 }
+
+main {
+  padding: 30px 0;
+}
+
 .weather-app-main {
   background-color: white;
   border-radius: 10px;
@@ -25,6 +30,17 @@ a {
   max-width: 600px;
   margin: 35px auto;
   padding: 30px;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-app-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
 }
 
 .search-form-input {
