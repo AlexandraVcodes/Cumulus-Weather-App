@@ -23,6 +23,7 @@ function refreshWeather(response) {
 function formateDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
+
   let days = [
     "Sunday",
     "Monday",
