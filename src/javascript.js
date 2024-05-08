@@ -7,6 +7,9 @@ function refreshWeather(response) {
   let windVariable = document.querySelector("#wind");
   let timeVariable = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconVariable = document.querySelector("#icon");
+
+  iconVariable.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 
   cityVariable.innerHTML = response.data.city;
   descriptionVariable.innerHTML = response.data.condition.description;
