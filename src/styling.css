@@ -82,8 +82,10 @@ main {
 }
 
 .weather-forecast {
-  margin-top: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+
   color: black;
 }
 
