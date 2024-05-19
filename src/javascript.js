@@ -18,6 +18,8 @@ function refreshWeather(response) {
   timeVariable.innerHTML = formateDate(date);
 
   temperatureVariable.innerHTML = Math.round(temperature);
+
+  getForecast(response.data.city);
 }
 
 function formateDate(date) {
@@ -54,6 +56,12 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "40eebb051ec036c739feeto37ba5f2ee";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
 function displayForecast(response) {
   console.log(response.data);
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -77,15 +85,7 @@ function displayForecast(response) {
   forecastVariable.innerHTML = forecastHtml;
 }
 
-function getForecast(city) {
-  let apiKey =
-    "https://api.shecodes.io/weather/v1/current?query={query}&key={key}";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
-  axios(apiUrl).then(displayForecast);
-}
-
 let searchFormVariable = document.querySelector("#search-form");
 searchFormVariable.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Berlin");
-getForecast("Berlin");
