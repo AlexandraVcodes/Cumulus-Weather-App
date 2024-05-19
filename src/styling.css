@@ -103,7 +103,7 @@ main {
 }
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: #1d0427;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -111,6 +111,7 @@ main {
 
 .weather-forecast-temperature {
   padding: 0 10px;
+  color: #1d0427;
 }
 
 .search-form-input {
